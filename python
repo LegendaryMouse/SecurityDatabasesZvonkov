@@ -1,0 +1,164 @@
+def taskmanager(fname):
+ if fname == "1":
+    s = 0
+    k = 15
+    d = k - 10
+    k = 4 * d
+    s = k - 50
+    print (s)
+
+ if fname =="2":
+     x = 3
+     y = 4
+     z = x+y
+     z = z+1
+     x = y
+     y = 5
+     x = z+y+7
+     print(x)
+
+ if fname =="3":
+    e = int(input("Введите цифру"))
+    print(e, e + 1, e + 2,)
+
+ if fname =="4":
+    a = int(input("Первое число:\n"))
+    b = int(input("Второе число:\n"))
+    c = int(input("Третье число:\n"))
+    d = (a + b + c)
+    print (d)
+
+ if fname == "5":
+    length = int(input("Введите длинну ребра\n"))
+    print("Обьем куба: ",length**3," Площадь полной поверхности: ",length*length*6)
+
+ if fname == "6":
+     a = int(input("Первое число:\n"))
+     b = int(input("Второе число:\n"))
+     print(3*(a+b)**3+275*b**2-127*a-41)
+
+ if fname == "7":
+     a = int(input("Целое:\n"))
+     print(a+1, a-1, sep=" Следующая\n", end=" Предыдущая\n")
+
+ if fname == "8":
+    a = int(input("Цена мышки:\n"))
+    b = int(input("Цена монитора:\n"))
+    c = int(input("Цена блока:\n"))
+    d = int(input("Цена клавиатуры:\n"))
+    e = (a+b+c+d)*3
+    print (e)
+
+ if fname == "9":
+    a = int(input("первое число\n"))
+    b = int(input("второе число\n"))
+    print(a+b,"\n", a-b,"\n",a*b,"\n",)
+
+ if fname == "10":
+    a = int(input("первое число:\n"))
+    b = int(input("Прогрессия:\n"))
+    c = int(input("Количество шагов:\n"))
+    ar = a+b*(c)
+    print(ar)
+
+ if fname == "11":
+    a = int(input("Первое число\n"))
+    print(a*1,"---",a*2,"---",a*3,"---",a*4,"---",a*5)
+
+ if fname == "progression":
+    a = int(input("Первое число\n"))
+    b = int(input("Прогрессия\n"))
+    c = int(input("Количество шагов:\n"))
+    print(a*(b**(c-1)))
+
+ if fname == "meters":
+    a = int(input("Расстояние в сантиметрах\n"))
+    print(a//100)
+
+ if fname == "oranges":
+    a = int(input("Количество мандаринов\n"))
+    b = int(input("Количество школьников\n"))
+    print(a//b)
+    print(a%b)
+
+ if fname == "tanos":
+    a = int(input("Количество людей\n"))
+    if a%2 == 1 :
+        print(a//2+1)
+    if a % 2 == 0:
+        print(a//2)
+
+ if fname == "cupe":
+    a = int(input("Номер места\n"))
+    if a % 4 > 0:
+        print(a//4+1)
+    if a % 4 == 0:
+        print(a//4)
+
+ if fname == "minutes":
+    a = int(input("Время в минутах\n"))
+    print(a," мин - это ",a//60," час ",a%60," мин")
+
+ if fname == "rsum":
+    a = int(input("Трехзначное число\n"))
+    print("Сумма цифр:",(a%10+(a%100-a%10)/10+(a-a%100)/100))
+    print("Произведение цифр:", (a % 10 * (a % 100 - a % 10) / 10 * (a - a % 100) / 100))
+
+ if fname == "replace":
+    a = int(input("Трехзначное число\n"))
+    c = str(int(a%10))
+    b = str(int((a%100-a%10)/10))
+    A = str(int((a-a%100)/100))
+    print(A + b + c)
+    print(A + c + b)
+    print(b + A + c)
+    print(b + c + A)
+    print(c + A + b)
+    print(c + b + A)
+ if fname == "thousand":
+    a = int(input("Четырехзначное число\n"))
+    c = str(int(a%10))
+    b = str(int((a%100-a%10)/10))
+    A = str(int((a-(a//1000*1000)-a%100)/100))
+    k = str(int((a - a % 100) / 1000))
+    print("Цифра в позиции тысяч равна:",k)
+    print("Цифра в позиции сотен равна:",A)
+    print("Цифра в позиции десятков равна:",b)
+    print("Цифра в позиции единиц равна:",c)
+
+ if fname == "pass":
+    a = input("Введите пароль\n")
+    b = input("Повторите пароль\n")
+    if a == b :
+        print("Пароль принят")
+    else :
+        print("Пароли не совпадают")
+
+ if fname == "evod":
+    a = int(input("Введите число\n"))
+    if a%2 == 1 :
+        print("Нечетное")
+    if a % 2 == 0:
+        print("Четное")
+ if fname == "ottf":
+    a = int(input("Четырехзначное число\n"))
+    c = (int(a%10))
+    b = (int((a%100-a%10)/10))
+    A = (int((a-(a//1000*1000)-a%100)/100))
+    k = (int((a - a % 100) / 1000))
+    if (k+c) == (A-b):
+        print("ДА")
+    else:
+        print("НЕТ")
+
+ if fname == "rcmn":
+    a = int(input("Введите возраст\n"))
+    if a < 18 :
+        print("Доступ запрещен")
+    else :
+        print("Доступ разрешен")
+
+functionName = input("Какую функцию запустить?\n")
+taskmanager(functionName)
+
+
