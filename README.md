@@ -7,3 +7,5 @@ https://docs.google.com/document/d/1V9DdYh1VfCevrwg0FbyRk2hGDeThJUTDSl1gTgkA4Y4/
 
 ## OSI:
 https://docs.google.com/document/d/1IqtCUhilTV_nVwefRRKri_EALsWm25latFSe50UnFDs/edit?usp=drivesdk
+# Практика
+## https://drive.google.com/drive/folders/1LNTuvy7rL4kbwzzsTC1Ty_RSgvYu-yPP
