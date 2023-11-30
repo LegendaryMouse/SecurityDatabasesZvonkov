@@ -1,0 +1,646 @@
+import random
+
+def coolallfunction(fname):
+ if fname == "1":
+    s = 0
+    k = 15
+    d = k - 10
+    k = 4 * d
+    s = k - 50
+    print (s)
+
+ if fname =="2":
+     x = 3
+     y = 4
+     z = x+y
+     z = z+1
+     x = y
+     y = 5
+     x = z+y+7
+     print(x)
+
+ if fname =="3":
+    e = int(input("Введите цифру"))
+    print(e, e + 1, e + 2,)
+
+ if fname =="4":
+    _a = int(input("Первое число:\n"))
+    b = int(input("Второе число:\n"))
+    c = int(input("Третье число:\n"))
+    d = (_a + b + c)
+    print (d)
+
+ if fname == "5":
+    length = int(input("Введите длинну ребра\n"))
+    print("Обьем куба: ",length**3," Площадь полной поверхности: ",length*length*6)
+
+ if fname == "6":
+     a = int(input("Первое число:\n"))
+     b = int(input("Второе число:\n"))
+     print(3*(a+b)**3+275*b**2-127*a-41)
+
+ if fname == "7":
+     a = int(input("Целое:\n"))
+     print(a+1, a-1, sep=" Следующая\n", end=" Предыдущая\n")
+
+ if fname == "8":
+    a = int(input("Цена мышки:\n"))
+    b = int(input("Цена монитора:\n"))
+    c = int(input("Цена блока:\n"))
+    d = int(input("Цена клавиатуры:\n"))
+    e = (a+b+c+d)*3
+    print (e)
+
+ if fname == "9":
+    a = int(input("первое число\n"))
+    b = int(input("второе число\n"))
+    print(a+b,"\n", a-b,"\n",a*b,"\n",)
+
+ if fname == "10":
+    a = int(input("первое число:\n"))
+    b = int(input("Прогрессия:\n"))
+    c = int(input("Количество шагов:\n"))
+    ar = a+b*(c)
+    print(ar)
+
+ if fname == "11":
+    a = int(input("Первое число\n"))
+    print(a*1,"---",a*2,"---",a*3,"---",a*4,"---",a*5)
+
+ if fname == "progression":
+    a = int(input("Первое число\n"))
+    b = int(input("Прогрессия\n"))
+    c = int(input("Количество шагов:\n"))
+    print(a*(b**(c-1)))
+
+ if fname == "meters":
+    a = int(input("Расстояние в сантиметрах\n"))
+    print(a//100)
+
+ if fname == "oranges":
+    a = int(input("Количество мандаринов\n"))
+    b = int(input("Количество школьников\n"))
+    print(a//b)
+    print(a%b)
+
+ if fname == "tanos":
+    a = int(input("Количество людей\n"))
+    if a%2 == 1 :
+        print(a//2+1)
+    if a % 2 == 0:
+        print(a//2)
+
+ if fname == "cupe":
+    a = int(input("Номер места\n"))
+    if a % 4 > 0:
+        print(a//4+1)
+    if a % 4 == 0:
+        print(a//4)
+
+ if fname == "minutes":
+    a = int(input("Время в минутах\n"))
+    print(a," мин - это ",a//60," час ",a%60," мин")
+
+ if fname == "rsum":
+    a = int(input("Трехзначное число\n"))
+    print("Сумма цифр:",(a%10+(a%100-a%10)/10+(a-a%100)/100))
+    print("Произведение цифр:", (a % 10 * (a % 100 - a % 10) / 10 * (a - a % 100) / 100))
+
+ if fname == "replace":
+    a = int(input("Трехзначное число\n"))
+    c = str(int(a%10))
+    b = str(int((a%100-a%10)/10))
+    A = str(int((a-a%100)/100))
+    print(A + b + c)
+    print(A + c + b)
+    print(b + A + c)
+    print(b + c + A)
+    print(c + A + b)
+    print(c + b + A)
+ if fname == "thousand":
+    a = int(input("Четырехзначное число\n"))
+    c = str(int(a%10))
+    b = str(int((a%100-a%10)/10))
+    A = str(int((a-(a//1000*1000)-a%100)/100))
+    k = str(int((a - a % 100) / 1000))
+    print("Цифра в позиции тысяч равна:",k)
+    print("Цифра в позиции сотен равна:",A)
+    print("Цифра в позиции десятков равна:",b)
+    print("Цифра в позиции единиц равна:",c)
+
+ if fname == "pass":
+    a = input("Введите пароль\n")
+    b = input("Повторите пароль\n")
+    if a == b :
+        print("Пароль принят")
+    else :
+        print("Пароли не совпадают")
+
+ if fname == "evod":
+    a = int(input("Введите число\n"))
+    if a%2 == 1 :
+        print("Нечетное")
+    if a % 2 == 0:
+        print("Четное")
+
+ if fname == "ottf":
+    a = int(input("Четырехзначное число\n"))
+    c = (int(a%10))
+    b = (int((a%100-a%10)/10))
+    A = (int((a-(a//1000*1000)-a%100)/100))
+    k = (int((a - a % 100) / 1000))
+    if (k+c) == (A-b):
+        print("ДА")
+    else:
+        print("НЕТ")
+
+ if fname == "rcmn":
+    a = int(input("Введите возраст\n"))
+    if a < 18 :
+        print("Доступ запрещен")
+    else :
+        print("Доступ разрешен")
+
+ if fname == "procheck":
+    a = int(input("Введите число прогрессии 1\n"))
+    b = int(input("Введите число прогрессии 2\n"))
+    c = int(input("Введите число прогрессии 3\n"))
+    if b-a == c-b:
+        print("Арифметическая прогрессия")
+    else :
+        print("НЕТ")
+
+ if fname == "lowest":
+    a = int(input("Введите число 1\n"))
+    b = int(input("Введите число 2\n"))
+    if a < b:
+        print(a)
+    else:
+        print(b)
+
+ if fname == "lowest4":
+    a = int(input("Введите число 1\n"))
+    b = int(input("Введите число 2\n"))
+    c = int(input("Введите число 3\n"))
+    d = int(input("Введите число 4\n"))
+    if a < b & a < c & a < d:
+        print(a)
+    if b < a and b < c and b < d:
+        print(b)
+    if c < b and c < a and c < d:
+        print(c)
+    if d < a and d < c and d < b:
+        print(d)
+
+ if fname == "aging":
+    a = int(input("Введите возраст\n"))
+    if a > 60:
+        print("старость")
+    else:
+        if a > 24:
+            print("зрелость")
+        else:
+            if a > 13:
+                print("молодость")
+            else:
+                print("детство")
+
+ if fname == "onlyplus":
+    a = int(input("Введите число 1\n"))
+    b = int(input("Введите число 2\n"))
+    c = int(input("Введите число 3\n"))
+    if a < 0:
+        a = 0
+    if b < 0:
+        b = 0
+    if c < 0:
+        c = 0
+    print(a+b+c)
+
+ if fname == "beauty":
+    a = int(input("Введите число\n"))
+    if a % 7 == 0:
+        print("YES")
+    else:
+        if a % 17 == 0:
+            print("YES")
+        else:
+            print("NO")
+
+ if fname == "triangle":
+    a = int(input("Введите сторону 1\n"))
+    b = int(input("Введите сторону 2\n"))
+    c = int(input("Введите сторону 3\n"))
+    if  a+b > c and a+c > b and b+c > a:
+        print("YES")
+    else:
+        print("NO")
+
+ if fname == "leap":
+    a = int(input("Введите год\n"))
+    if a%4==0:
+        if a%100==0:
+            if a%400==0:
+                print("YES")
+            else:
+                print("NO")
+        else:
+            print("YES")
+
+ if fname == "rook":
+    x1 = int(input("Введите начальную координату 1\n"))
+    y1 = int(input("Введите начальную координату 2\n"))
+    x2 = int(input("Введите конечную координату 1\n"))
+    y2 = int(input("Введите конечную координату 2\n"))
+    if x1 == x2:
+        print("YES")
+    elif y1 == y2:
+        print("YES")
+    else:
+        print("NO")
+
+ if fname == "supcalc":
+    a = int(input("Введите число 1\n"))
+    b = int(input("Введите число 2\n"))
+    c = input("Введите операцию\n")
+    if c == "*":
+         print(a*b)
+    elif c == "/":
+        if b == 0:
+            print("На ноль делить нельзя")
+        else:
+            print(a/b)
+    elif c == "+":
+         print(a+b)
+    elif c == "-":
+         print(a-b)
+    else:
+        print("Некорректаня операция")
+
+ if fname == "speedster":
+    a = int(input("ZOOM\n"))
+    b = int(input("Flash\n"))
+    if a > b:
+        print("NO")
+    if a < b:
+        print("YES")
+    if a == b:
+        print("Dont know")
+
+ if fname == "trianglechack":
+    a = int(input("1\n"))
+    b = int(input("2\n"))
+    c = int(input("3\n"))
+    if a == b == c:
+        print("Равносторонний")
+    elif a == b or b == c or a == c:
+        print("Равнобедренный")
+    else:
+        print("Разносторонний")
+
+ if fname == "avgdigt":
+    a = int(input("1\n"))
+    b = int(input("2\n"))
+    c = int(input("3\n"))
+    if a < b < c or c < b < a:
+        print(b)
+    elif a < c < b or b < c < a:
+        print(c)
+    else:
+        print(a)
+
+ if fname == "daycount":
+    a = int(input("месяц\n"))
+    if a == 2:
+        print(28)
+    elif a == 1 or a == 3 or a ==5 or a == 7 or a == 8 or a == 10 or a == 12:
+        print(31)
+    else:
+        print(30)
+ if fname == "weight":
+    a = int(input("вес\n"))
+    if a < 60:
+        print("Легкий вес")
+    elif a < 64:
+        print("Первый полусредний вес")
+    else:
+        print("Полусредний вес")
+
+ if fname == "colormixer":
+    a = input("цвет 1\n")
+    b = input("цвет 2\n")
+    if a == "красный" and b == "синий":
+        print("фиолетовый")
+    elif b== "красный" and a == "синий":
+        print("фиолетовый")
+    elif b == "красный" and a == "желтый":
+        print("оранжевый")
+    elif a == "красный" and b == "желтый":
+        print("оранжевый")
+    elif b == "синий" and a == "желтый":
+        print("зеленый")
+    elif a == "синий" and b == "желтый":
+        print("зеленый")
+    else:
+        print("некорректный цвет")
+
+ if fname == "casino":
+    # В этой задаче мне нужно определить цвет кармана по вводимому номеру или вывести ошибку ввода если число не в диапазоне 0-36
+    a = int(input("номер кармана\n"))
+    # просто эксперимент с библиотекой inport random, создает случайное число от 0 до 36 и выводит сообщение о победе если введеное число совпало с ним
+    b = random.randint(0, 36)
+    print("ваш карман:",a,"случайный карман:",b)
+    if a == b:
+        print("вы выиграли 10000000$")
+    if a == 0:
+        print("зеленый")
+    elif 1 <= a <= 36:
+        if 1 <= a <= 10 or 19 <= a <= 28:
+            if a%2 == 0:
+                print("черный")
+            else:
+                print("красный")
+        else:
+            if a%2 == 1:
+                print("черный")
+            else:
+                print("красный")
+    else:
+        print("ошибка ввода")
+
+ if fname == "peres":
+    # В этой задаче мне нужно определить пересечение двух отрезков по 4 данным точкам, либо вывести пустое множеств при отсутствии пересечаний
+    a1, b1, a2, b2 = int(input()), int(input()), int(input()), int(input())
+    print("задание в работе")
+
+ if fname == "контрольная":
+    # 1. print
+    # 2.
+    print('Поема "Мертвые души" одна из самых интересных')
+    print("I`m a math teacher and a programmer!")
+    print("I`m a math teacher and a programmer!")
+    print("3.1415")
+    print()
+    # 3.
+    print("Python",'is the best','!!')
+    # 4.
+    print("the world`s little blurry","or maybe it`s my eyes",end='!!!',sep=':)')
+    print("Honey, what`s your hurry",end='?')
+    print("Told you not to worry","But maybe that`s a lie",sep=':)')
+    # 5. input()
+    # 6. n = int(input())
+    # 7. Имя переменной может начинаться с нижнего подчеркивания, но не может начинаться с цифры. также не может совпадать с ключевым словом
+    # 8.
+    s = 13
+    k = -5
+    d = s+2
+    s = d
+    k = 2*s
+    print(s+k+d)
+    # 9.
+    a = 17//(23%7)
+    b = 34%a*5-29%4*3
+    print(a*b)
+
+ if fname == "trgsqr":
+     # нахождение площади треугольника по двум катетам
+     a = int(input("kat 1"))
+     b = int(input("kat 2"))
+     print("sqr = ",a*b/2)
+
+ if fname == "gran2":
+     # нахождение времени столкновения по расстоянию и скорости двух тел
+     a = int(input("speed 1"))
+     b = int(input("speed 2"))
+     c = int(input("dist"))
+     print("time = ", c/(a+b))
+
+ if fname == "reverse":
+     # нахождение обратного числа данному
+     a = float(input(""))
+     if a == 0:
+         print("0 нельзя)")
+     else:
+         print(1/a)
+
+ if fname == "celcius":
+     # перевод данных градусов Фаренгейта в Цельсия
+     a = float(input(""))
+     print((5/9)*(a-32))
+
+ if fname == "dogage":
+     # перевод возраста собаки в человеческие года
+     a = float(input(""))
+     if a <= 2:
+        print(a * 10.5)
+     else:
+        print(21 + (a-2)*4)
+
+ if fname == "firstdot":
+     # первая цифра после точки
+     a = float(input(""))
+     print(int(a*10%10))
+
+ if fname == "drob":
+     # дробная часть числа
+     a = float(input(""))
+     print(a%1)
+
+ if fname == "mostmin5":
+     # наибольшее и наименьшее число из 5 данных
+     a = float(input(""))
+     b = float(input(""))
+     c = float(input(""))
+     d = float(input(""))
+     e = float(input(""))
+     if a>b and a>c and a>d and a>e:
+        print("Наибольшее =",a)
+     if b > a and b > c and b > d and b > e:
+        print("Наибольшее =", b)
+     if c>b and c>a and c>d and c>e:
+        print("Наибольшее =",c)
+     if d > b and d > c and d > a and d > e:
+        print("Наибольшее =", d)
+     if e > b and e > c and e > d and e > a:
+        print("Наибольшее =", e)
+     if a<b and a<c and a<d and a<e:
+        print("Наименьшее =",a)
+     if b < a and b < c and b < d and b < e:
+        print("Наименьшее =", b)
+     if c<b and c<a and c<d and c<e:
+        print("Наименьшее =",c)
+     if d < b and d < c and d < a and d < e:
+        print("Наименьшее =", d)
+     if e < b and e < c and e < d and e < a:
+        print("Наименьшее =", e)
+
+ if fname == "sorting3":
+     # сортировка трех чисел от большего к меньшему
+     a = float(input(""))
+     b = float(input(""))
+     c = float(input(""))
+     if a < b < c:
+         print(a, b, c, sep="\n")
+     if a < c < b:
+         print(a, c, b, sep="\n")
+     if b < a < c:
+         print(b, a, c, sep="\n")
+     if b < c < a:
+         print(b, c, a, sep="\n")
+     if c < b < a:
+         print(c, b, a, sep="\n")
+     if c < a < b:
+         print(c, a, b, sep="\n")
+
+ if fname == "interesting945":
+     # признание трехзначного числа интересным если разность наибольшей и наименьшей цифры равна средней
+     a = float(input(""))
+     b = a//100
+     c = a//10-b*10
+     d = a%10
+     nums = [b, c, d]
+     maxdigit = max(nums)
+     mindigit = min(nums)
+     nums.remove(maxdigit)
+     nums.remove(mindigit)
+     if maxdigit - mindigit == nums[0]:
+         print("Интересное")
+     else:
+         print("Неинтересное")
+
+ if fname == "absolutesum":
+     # сумма модулей пяти данных чисел
+     a = float(input(""))
+     b = float(input(""))
+     c = float(input(""))
+     d = float(input(""))
+     e = float(input(""))
+     print(abs(a)+abs(b)+abs(c)+abs(d)+abs(e))
+
+ if fname == "manhetton":
+     # Манхеттонское расстояние между двумя точками по 4 заданным координатам
+     a = float(input(""))
+     b = float(input(""))
+     c = float(input(""))
+     d = float(input(""))
+     print(abs(c-a)+abs(b-d))
+
+
+ '''мне нужно было написать код который должен вывести Python is a great language '''
+ if fname == "pygreat":
+     print('"Python is a great language", Said Fred. "I don', "'t ever remeber having this much fun before.", '"',
+           sep="")
+
+ '''мне нужно было напсать код которому на входе подается только имя и фамилия и он вставляет их в предложение'''
+ if fname == "imfam":
+     a = input()
+     b = input()
+     print("Hello", a, b, "! You have just delved into Python")
+
+ '''мне нужно было написать код который выводит название фут.команды и считывает количество символов в названии команды'''
+ if fname == "futbol":
+     a = input()
+     print("Футбольная команда", a, "имеет длину", len(a), "символов")
+
+ '''мне нужно было написать код который при введении названий трех городов выводит только самое длинное и короткре название'''
+ if fname == "shortlongname":
+     a = input()
+     b = input()
+     c = input()
+     if len(a) > len(b) > len(c) or len(c) > len(b) > len(a):
+         print(a)
+         print(c)
+     elif len(a) > len(c) > len(b) or len(b) > len(c) > len(a):
+         print(a)
+         print(b)
+     else:
+         print(b)
+         print(c)
+
+ '''мне нужно было написать код который выесняет можно ли из длин введеных данных составить арифмитическую прогресию'''
+ if fname == "longprogression":
+     a = input()
+     b = input()
+     c = input()
+     if len(a) + len(b) == len(c) or len(a) + len(c) == len(b) or len(b) + len(c) == len(a):
+         print('yes')
+     else:
+         print('no')
+
+ '''мне нужно было написать код который ищет слово синий в предложении и если оно есть то выводит да в противном случае нет'''
+ if fname == "bluemood":
+     a = input()
+     if "синий" in a:
+         print('о да тут есть синий')
+     else:
+         print('синий отсутствует')
+
+ '''мне нужно было написать код который ищет слово воскресенье или суббота в предложении и если оно есть то выводит да в противном случае нет'''
+ if fname == "restli":
+     a = input()
+     if "воскресенье" in a or "суббота" in a:
+         print('долгожданные выходные')
+     else:
+         print('опять работа')
+
+ '''мне нужно было написать код который ищет символы "@." в предложении и если оно есть то выводит да в противном случае нет'''
+ if fname == "emailtest1":
+     a = input()
+     if "." in a and "@" in a:
+         print('email верный')
+     else:
+         print('ошибка попробуйте еще раз')
+
+ '''мне нужно было написать код который находит растояние между двумя точками'''
+ if fname == "distancedots":
+     x1 = float(input())
+     x2 = float(input())
+     y1 = float(input())
+     y2 = float(input())
+     a = (((x1 - x2) ** 2) + ((y1 - y2) ** 2)) ** 0.5
+     print(a)
+
+ '''мне нужно было написать код который расчитывает площадь круга и длинну окружности по заданному радиусу'''
+ if fname == "circlefind":
+     import math
+
+     a = float(input())
+     print(math.pi * (a ** 2))
+     print((math.pi * 2) * a)
+
+ '''мне нужно было написать код который по 2 заданым числам находит средние числа'''
+ if fname == "awgnums":
+     a = float(input())
+     b = float(input())
+     c = 0.5
+     print('Арифметик ', (a + b) / 2)
+     print('Геометрик ', (a * b) ** c)
+     print('гармоник ', (a * b * 2) / (a + b))
+     print('Квадрат', (((a ** 2) + (b ** 2)) / 2) ** c)
+
+ '''мне нужно было написать код вычесляющий тригонометрическое вырожение по заданному х'''
+ if fname == "trigonometrymath":
+     import math
+
+     x = float(input())
+     sin1 = math.sin(x)
+     cos1 = math.cos(x)
+     tan1 = math.tan(x) ** 2
+     print('sin x = ', sin1)
+     print('cos x = ', cos1)
+     print('tan^2 x = ', tan1)
+     r = (x * math.pi) / 180
+     print('r = ', r)
+
+ '''мне нужно было написать код который находит площадь правильного многоугольника'''
+ if fname == "squarenotsquare":
+     import math
+
+     a = float(input())
+     b = float(input())
+     s = (a * (b ** 2) / (4 * math.tan(math.pi / a)))
+     print(s)
+
+coolallfunction(input("Какую функцию мне запустить?\n"))
+
+
