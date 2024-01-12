@@ -4,7 +4,7 @@
 ## TCP-IP:
 https://docs.google.com/document/d/1V9DdYh1VfCevrwg0FbyRk2hGDeThJUTDSl1gTgkA4Y4/edit?usp=drivesdk
 ### Лекции все главы учебник + конспект: https://docs.google.com/document/d/12A88ISSPn1KYJZep1zb1cOA18kYrCt7PJjyH97SOYvo/edit?usp=drivesdk
-
+https://docs.google.com/document/d/1jArakVzM3lQQum4oxHCLyLBKrxRXeXQqzKIOQFhbJl8/edit?usp=drivesdk
 ## OSI:
 https://docs.google.com/document/d/1IqtCUhilTV_nVwefRRKri_EALsWm25latFSe50UnFDs/edit?usp=drivesdk
 # Практика
